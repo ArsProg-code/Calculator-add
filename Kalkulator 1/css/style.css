@@ -1,0 +1,76 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container kalkulator */
+  .kalkulator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  /* Layar tampilan */
+  #layar {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #0f0;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Tombol-tombol */
+  .tombol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .tombol button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .tombol button:hover {
+    background-color: #555;
+  }
+  
+  /* Tombol khusus */
+  .equal {
+    grid-row: span 2;
+    background-color: #ff9500;
+  }
+  
+  .equal:hover {
+    background-color: #e08900;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
+  
